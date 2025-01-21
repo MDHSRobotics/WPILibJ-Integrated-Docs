@@ -11,13 +11,10 @@
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "wpilibj-integrated-docs.helloWorld",
-        "title": "WPILibJ Integrated Docs Test"
-      }
-    ]
+  "capabilities": {
+    "codeLensProvider" : {
+      "resolveProvider": "true"
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
