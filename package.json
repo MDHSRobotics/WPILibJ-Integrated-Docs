@@ -3,6 +3,10 @@
   "displayName": "WPILibJ Integrated Docs",
   "description": "Provides hovers and quick links to WPILib docs while coding for FRC.",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KingRocco21/WPILibJ-Integrated-Docs"
+  },
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -14,6 +18,28 @@
   "capabilities": {
     "codeLensProvider" : {
       "resolveProvider": "true"
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "title": "Enable CodeLens",
+        "command": "codelens-sample.enableCodeLens",
+        "category": "CodeLens Sample"
+      },
+      {
+        "title": "Disable Codelens",
+        "command": "codelens-sample.disableCodeLens",
+        "category": "CodeLens Sample"
+      }
+    ],
+    "configuration": {
+      "properties": {
+        "codelens-sample.enableCodeLens": {
+          "type": "boolean",
+          "default": true
+        }
+      }
     }
   },
   "scripts": {
