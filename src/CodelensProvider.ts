@@ -20,7 +20,7 @@ export class CodelensProvider implements vscode.CodeLensProvider {
 
 	public provideCodeLenses(document: vscode.TextDocument, _token: vscode.CancellationToken): vscode.CodeLens[] | Thenable<vscode.CodeLens[]> {
 
-		if (vscode.workspace.getConfiguration("codelens-sample").get("enableCodeLens", true)) {
+		if (vscode.workspace.getConfiguration("wpilibj-integrated-docs").get("enableCodeLens", true)) {
 			this.codeLenses = [];
 			const regex = new RegExp(this.regex);
 			const text = document.getText();
@@ -40,11 +40,11 @@ export class CodelensProvider implements vscode.CodeLensProvider {
 	}
 
 	public resolveCodeLens(codeLens: vscode.CodeLens, _token: vscode.CancellationToken) {
-		if (vscode.workspace.getConfiguration("codelens-sample").get("enableCodeLens", true)) {
+		if (vscode.workspace.getConfiguration("wpilibj-integrated-docs").get("enableCodeLens", true)) {
 			codeLens.command = {
 				title: "Codelens provided by sample extension",
 				tooltip: "Tooltip provided by sample extension",
-				command: "codelens-sample.codelensAction",
+				command: "wpilibj-integrated-docs.codelensAction",
 				arguments: ["Argument 1", false]
 			};
 			return codeLens;

@@ -24,18 +24,18 @@
     "commands": [
       {
         "title": "Enable CodeLens",
-        "command": "codelens-sample.enableCodeLens",
-        "category": "CodeLens Sample"
+        "command": "wpilibj-integrated-docs.enableCodeLens",
+        "category": "WPILibJ Integrated Docs"
       },
       {
         "title": "Disable Codelens",
-        "command": "codelens-sample.disableCodeLens",
-        "category": "CodeLens Sample"
+        "command": "wpilibj-integrated-docs.disableCodeLens",
+        "category": "WPILibJ Integrated Docs"
       }
     ],
     "configuration": {
       "properties": {
-        "codelens-sample.enableCodeLens": {
+        "wpilibj-integrated-docs.enableCodeLens": {
           "type": "boolean",
           "default": true
         }

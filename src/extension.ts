@@ -11,18 +11,19 @@ let disposables: Disposable[] = [];
 export function activate(_context: ExtensionContext) {
 	const codelensProvider = new CodelensProvider();
 
-	languages.registerCodeLensProvider("*", codelensProvider);
+	// Change to 'java'
+	languages.registerCodeLensProvider('java', codelensProvider);
 
-	commands.registerCommand("codelens-sample.enableCodeLens", () => {
-		workspace.getConfiguration("codelens-sample").update("enableCodeLens", true, true);
+	commands.registerCommand("wpilibj-integrated-docs.enableCodeLens", () => {
+		workspace.getConfiguration("wpilibj-integrated-docs").update("enableCodeLens", true, true);
 	});
 
-	commands.registerCommand("codelens-sample.disableCodeLens", () => {
-		workspace.getConfiguration("codelens-sample").update("enableCodeLens", false, true);
+	commands.registerCommand("wpilibj-integrated-docs.disableCodeLens", () => {
+		workspace.getConfiguration("wpilibj-integrated-docs").update("enableCodeLens", false, true);
 	});
 
-	commands.registerCommand("codelens-sample.codelensAction", (args: unknown) => {
-		window.showInformationMessage(`CodeLens action clicked with args=${args}`);
+	commands.registerCommand("wpilibj-integrated-docs.codelensAction", (args: unknown) => {
+		commands.executeCommand('vscode.open', "https://docs.wpilib.org/en/stable/docs/software/labview/index.html");
 	});
 }
 
