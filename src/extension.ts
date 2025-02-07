@@ -12,22 +12,15 @@ export function activate(_context: vscode.ExtensionContext) {
 		vscode.languages.registerCodeLensProvider('java', codelensProvider));
 
 	_context.subscriptions.push(
-		vscode.commands.registerCommand("wpilibj-integrated-docs.codelensAction", (args: unknown) => {
-			vscode.commands.executeCommand("wpilibj-integrated-docs.openDocs");
+		vscode.commands.registerCommand("wpilibj-integrated-docs.codelensAction", (webviewTitle: string, docsLink: string) => {
+			const panel: vscode.WebviewPanel = vscode.window.createWebviewPanel('docsView', webviewTitle, vscode.ViewColumn.Two, {});
+			panel.webview.html = getWebviewContent(docsLink);
 			//commands.executeCommand('vscode.open', "https://docs.wpilib.org/en/stable/docs/software/labview/index.html");
-		})
-	);
-
-	_context.subscriptions.push(
-		vscode.commands.registerCommand("wpilibj-integrated-docs.openDocs", (args: unknown) => {
-			const panel: vscode.WebviewPanel = vscode.window.createWebviewPanel('docsView', 'Docs View', vscode.ViewColumn.Two, {});
-			panel.webview.html = getWebviewContent();
-			
 		})
 	);
 }
 
-function getWebviewContent() {
+function getWebviewContent(docsLink: string) {
 	return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,8 +28,8 @@ function getWebviewContent() {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test</title>
 </head>
-<body style="background-color:#e0e0e0">
-	<iframe src="https://docs.wpilib.org/en/stable/docs/software/labview/index.html" style="border:none;position:absolute;height:100%;" title="Labview" width="100%"></iframe>
+<body">
+	<iframe src="${docsLink}" width="100%" style="border:none;height:100vh;"></iframe>
 </body>
 </html>`;
 }

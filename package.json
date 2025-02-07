@@ -17,17 +17,8 @@
   "main": "./dist/extension.js",
   "capabilities": {
     "codeLensProvider" : {
-      "resolveProvider": "true"
+      "resolveProvider": "false"
     }
-  },
-  "contributes": {
-    "commands": [
-      {
-        "title": "Open WPILib Docs in Side Window",
-        "command": "wpilibj-integrated-docs.openDocs",
-        "category": "WPILibJ Integrated Docs"
-      }
-    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
