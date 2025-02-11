@@ -15,7 +15,6 @@ export class CodelensProvider implements vscode.CodeLensProvider {
 
 	public provideCodeLenses(document: vscode.TextDocument, _token: vscode.CancellationToken): vscode.CodeLens[] | Thenable<vscode.CodeLens[]> {
 		this.codeLenses = [];
-		// Get the entire document's text
 		const text: string = document.getText();
 		for (const match of text.matchAll(this.regex)) {
 			// console.log(match);
