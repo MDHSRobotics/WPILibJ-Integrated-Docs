@@ -15,10 +15,8 @@
   ],
   "activationEvents": [ "onStartupFinished" ],
   "main": "./dist/extension.js",
-  "capabilities": {
-    "codeLensProvider" : {
-      "resolveProvider": "false"
-    }
+  "capabilities" : {
+    "hoverProvider" : "true"
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
