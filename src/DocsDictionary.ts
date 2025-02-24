@@ -15,6 +15,9 @@ export const stringDictionary: Record<string, string> = {
     "DataLogManager": `[${titleStart}DataLogManager${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/telemetry/datalog.html)`,
     "SmartDashboard": `[${titleStart}SmartDashboard${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/dashboards/smartdashboard/index.html)`, // SmartDashboard is deprecated and will be removed for 2027
 
+    // Sensors
+    "DigitalInput": `[${titleStart}Digital Inputs${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/hardware-apis/sensors/digital-inputs-software.html)`,
+
     // Units
     "Angle": `[${titleStart}Units${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/basic-programming/java-units.html)`,
     "AngularAcceleration": `[${titleStart}Units${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/basic-programming/java-units.html)`,
@@ -65,8 +68,23 @@ export const stringDictionary: Record<string, string> = {
     // - System Identification
     "SysIdRoutine": `[${titleStart}SysId Routine${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/system-identification/creating-routine.html)`,
     // - Controllers
+    "ArmFeedforward": `[${titleStart}Arm Feedforward${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/controllers/feedforward.html#armfeedforward)`,
+    "ElevatorFeedforward": `[${titleStart}Elevator Feedforward${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/controllers/feedforward.html#elevatorfeedforward)`,
+    "PIDController": `[${titleStart}PID Control${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/controllers/pidcontroller.html)`,
+    "ProfiledPIDController": `[${titleStart}Profiled PID Controller${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/controllers/profiled-pidcontroller.html)`,
+    "SimpleMotorFeedforward": `[${titleStart}Simple Motor Feedforward${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/controllers/feedforward.html#simplemotorfeedforward)`,
     "TrapezoidProfile": `[${titleStart}Motion Profile${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/advanced-controls/controllers/trapezoidal-profiles.html)`,
 
+    /* REV */
+    "SparkFlex": `[${titleStart}REV's SPARK${titleEnd}](https://docs.revrobotics.com/revlib/24-to-25#including-the-library-and-creating-a-spark-object)`,
+    "SparkMax": `[${titleStart}REV's SPARK${titleEnd}](https://docs.revrobotics.com/revlib/24-to-25#including-the-library-and-creating-a-spark-object)`,
+
+    // Configuring a SPARK
+    "SparkClosedLoopController": `[${titleStart}REV's Closed Loop Control${titleEnd}](https://docs.revrobotics.com/revlib/spark/closed-loop)`,
+
+    // Closed Loop Control
+    "SparkFlexConfig": `[${titleStart}REV's Configuration${titleEnd}](https://docs.revrobotics.com/revlib/spark/configuring-a-spark)`,
+    "SparkMaxConfig": `[${titleStart}REV's Configuration${titleEnd}](https://docs.revrobotics.com/revlib/spark/configuring-a-spark)`,
     
     /* CTRE */
     // General API Usage
