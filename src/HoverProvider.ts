@@ -8,7 +8,7 @@ export class HoverProvider implements vscode.HoverProvider {
 
 	constructor() {
 		this.regex = new RegExp(`\\b(${Object.keys(stringDictionary).join("|")})\\b|${Object.keys(substringDictionary).join("|")}`, "g");
-		console.log(this.regex);
+		// console.log(this.regex);
 	}
 
 	public provideHover(
@@ -20,10 +20,10 @@ export class HoverProvider implements vscode.HoverProvider {
 				let matchMessage: string = stringDictionary[match];
 				if (matchMessage)
 				{
-					console.log("Match is found in string dictionary");
+					// console.log("Match is found in string dictionary");
 					return new vscode.Hover(matchMessage);
 				}
-				console.log("Match is not found in string dictionary");
+				// console.log("Match is not found in string dictionary");
 				matchMessage = substringDictionary[match];
 				return new vscode.Hover(matchMessage);
 			}

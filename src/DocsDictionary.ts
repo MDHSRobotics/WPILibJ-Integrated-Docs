@@ -3,9 +3,8 @@ const titleEnd: string = " documentation";
 
 // Listed by topic, and then by alphabetical order
 export const stringDictionary: Record<string, string> = {
+    // "": `[${titleStart}${titleEnd}]()`,
     /* WPILib */
-    //"": `[${titleStart}${titleEnd}]()`,
-
     // Dashboards
     "Field2d": `[${titleStart}Field2d${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/dashboards/glass/field2d-widget.html)`,
     "Mechanism2d": `[${titleStart}Mechanism2d${titleEnd}](https://docs.wpilib.org/en/stable/docs/software/dashboards/glass/mech2d-widget.html)`,
