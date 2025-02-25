@@ -11,8 +11,6 @@ This VSCode extension made by Team 4141 aims to make programming in the [First R
 ## Requirements
 This extension requires an internet connection, since it opens up links in your browser.
 
-## Installation
-
 ## Limitations
 - This extension only provides hovers for Java right now.
 - Because this extension uses RegEx, it will match any word that contains a string found in the dictionary.

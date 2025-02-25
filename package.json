@@ -1,11 +1,12 @@
 {
   "name": "wpilibj-integrated-docs",
   "displayName": "WPILibJ Integrated Docs",
+  "icon": "images/icon.png",
   "description": "Provides hovers and quick links to WPILib docs while coding for FRC.",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KingRocco21/WPILibJ-Integrated-Docs"
+    "url": "https://github.com/MDHSRobotics/WPILibJ-Integrated-Docs"
   },
   "engines": {
     "vscode": "^1.96.0"
