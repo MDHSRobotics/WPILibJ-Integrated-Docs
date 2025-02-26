@@ -14,3 +14,4 @@ This extension requires an internet connection, since it opens up links in your 
 ## Limitations
 - This extension only provides hovers for Java right now.
 - Because this extension uses RegEx, it will match any word that contains a string found in the dictionary.
+- Not all WPILib types have hovers right now. If there is a type that you want added, feel free to create a GitHub issue or pull request.
