@@ -1,5 +1,5 @@
 # Contributing Links to Types
-All of the type names and links are stored in [DocsDictionay.ts](/src/DocsDictionary.ts).
+All of the type names and links are stored in [DocsDictionary.ts](/src/DocsDictionary.ts).
 
 Please make sure to respect the order of the keys - they are listed by vendor, then by order of topics on the vendor's website from top to bottom, and then in alphabetical order for keys on the same page.
 
